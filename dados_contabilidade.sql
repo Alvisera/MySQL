@@ -1,4 +1,7 @@
------------SETORES------------
+-----------SETORES AREAS------------
+
+
+
 
 insert into setores (areas) values ('Auditoria');
 insert into setores (areas) values ('Contabilidade Fiscal');
@@ -16,42 +19,121 @@ insert into setores (areas) values ('Tecnologia da Informação');
 insert into setores (areas) values ('Recursos Humanos');
 insert into setores (areas) values ('Marketing e Desenvolvimento de Negócios');
 
-insert into setores (idsetores, auditoria, id_funcionarios) values (null, 'Henrique Macedo', 2);
 
------------ENDERECO------------
 
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (1, '6877 Danilo Alameda', 'São Cristóvão', 'Murilo do Sul', 'Amapá', '87996-016', 4);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (2, '30211 Ígor Alameda', 'Centro', 'Saraiva do Sul', 'Paraíba', '04327-390', 30);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (3, '778 Carvalho Travessa', 'Cancelli', 'Aline do Descoberto', 'Paraná', '72908-458', 9);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (4, '4927 Santos Rua', 'Maria Luiza', 'Emanuel do Norte', 'Rio de Janeiro', '72586-978', 8);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (5, '5539 Heloísa Rua', 'Country', 'Braga do Descoberto', 'Roraima', '51800-660', 18);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (6, '36259 Isis Marginal', 'Região do Lago', 'Giovanna de Nossa Senhora', 'São Paulo', '81975-795', 13);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (7, '7239 Célia Rodovia', 'Cancelli', 'Souza do Norte', 'Paraíba', '34907-266', 20);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (8, '74674 Oliveira Travessa', 'Canadá', 'Macedo do Sul', 'Santa Catarina', '10791-257', 14);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (9, '4209 Martins Rodovia', 'Parque São Paulo', 'Antônio do Norte', 'Amapá', '01749-756', 16);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (10, '37767 Costa Rua', 'Região do Lago', 'Bruna do Descoberto', 'Mato Grosso', '83972-580', 15);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (11, '68681 Benjamin Avenida', 'Country', 'Bryan do Descoberto', 'Rondônia', '03157-657', 17);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (12, '69279 Santos Travessa', 'São Cristóvão', 'Enzo Gabriel do Sul', 'Sergipe', '48821-249', 22);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (13, '8069 Barros Travessa', 'Maria Luiza', 'Fabrício do Norte', 'Amapá', '65230-369', 11);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (14, '40240 Silva Rodovia', 'Centro', 'Kléber do Descoberto', 'Rondônia', '26846-224', 25);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (15, '859 Lucca Travessa', 'Cascavel Velho', 'Hélio de Nossa Senhora', 'Pará', '95873-488', 12);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (16, '92914 Danilo Rua', 'Maria Luiza', 'Santos do Norte', 'Rondônia', '49743-716', 23);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (17, '1057 Isaac Travessa', 'Parque Verde', 'Oliveira de Nossa Senhora', 'Rio Grande do Norte', '06617-127', 6);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (18, '64293 Marli Marginal', 'Alto Alegre', 'Hugo do Descoberto', 'Bahia', '23260-530', 24);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (19, '6836 Enzo Avenida', 'Maria Luiza', 'Pablo do Sul', 'Roraima', '94216-999', 21);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (20, '618 Fabrícia Travessa', 'Country', 'Carlos de Nossa Senhora', 'Rio Grande do Sul', '89137-516', 3);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (21, '11436 Pereira Travessa', 'Neva', 'Benício do Sul', 'Amazonas', '15854-181', 7);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (22, '62269 Reis Rua', 'Pioneiros Catarinenses', 'Santos do Norte', 'Pará', '40021-721', 29);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (23, '526 Moreira Marginal', 'Parque Verde', 'Carvalho do Sul', 'Minas Gerais', '92575-199', 10);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (24, '4880 Pereira Rua', 'Universitário', 'Janaína do Norte', 'Rio Grande do Norte', '70231-436', 1);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (25, '735 Bryan Alameda', 'Coqueiral', 'Moraes de Nossa Senhora', 'Amapá', '52914-258', 2);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (26, '7143 Emanuel Alameda', 'Centro', 'Franco do Norte', 'Tocantins', '69615-808', 26);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (27, '620 Meire Avenida', 'Neva', 'Bernardo do Descoberto', 'Piauí', '94412-581', 5);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (28, '85388 Janaína Avenida', 'Parque São Paulo', 'Pedro Henrique do Descoberto', 'Rondônia', '25701-718', 27);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (29, '78640 Benício Rua', 'Pacaembu', 'Vicente do Norte', 'Acre', '95486-415', 28);  
-Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (30, '7593 Oliveira Travessa', 'Centro', 'Maria Helena do Descoberto', 'Sergipe', '46379-730', 19);
 
------------FUNCIONARIOS------------
+
+
+
+------------------------------------------------------------INSERT SETORES---------------------------------------------------------------------
+
+
+
+
+--------ADICIONAR NOVOS FUNCIONARIOS----------
+update setores
+set  ti = 'mateus'
+where idsetores = 4;
+
+
+insert into setores (auditoria,
+                    contab_fiscal,
+                    contab_gerencial,
+                    consul_financeira,
+                    gestao_de_riscos,
+                    contab_de_custos,
+                    serv_de_payroll,
+                    serv_de_compliance,
+                    serv_de_planej_tribu,
+                    contab_forense,
+                    ti,
+                    rh,
+                    marketing
+                    ) values 
+                    ('Eduarda Melo',
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     null,
+                     'Félix Oliveira',
+                     null);
+
+
+
+
+
+
+
+-----------REMOVER FUNCIONARIOS------------------
+update setores
+set ti = ''
+where ti = 'mateus';
+
+
+
+
+                    
+insert into setores (auditoria, id_funcionarios) values ('Srta. Beatriz Barros', 1);
+insert into setores (auditoria, id_funcionarios) values ('Fábio Batista Filho', 12);
+insert into setores (auditoria, id_funcionarios) values ('Eduarda Melo', 26);
+
+insert into setores (contab_fiscal, id_funcionarios) values ('Vitória Batista', 21);
+insert into setores (contab_fiscal, id_funcionarios) values ('Sra. Ana Luiza Oliveira', 10);
+
+insert into setores (idsetores, contab_gerencial, id_funcionarios) values (null, 'Maria Júlia Santos', 6);
+insert into setores (idsetores, contab_gerencial, id_funcionarios) values (null, 'Washington Carvalho', 3);
+
+insert into setores (idsetores, consul_financeira, id_funcionarios) values (null, 'Víctor Xavier', 4);
+
+insert into setores (idsetores, gestao_de_riscos, id_funcionarios) values (null, 'Felipe Oliveira', 22);
+
+insert into setores (idsetores, contab_de_custos, id_funcionarios) values (null, 'Maria Júlia Barros', 5);
+insert into setores (idsetores, contab_de_custos, id_funcionarios) values (null, 'Meire Martins Jr', 24);
+
+insert into setores (idsetores, serv_de_payroll, id_funcionarios) values (null, 'Silas Costa', 11);
+insert into setores (idsetores, serv_de_payroll, id_funcionarios) values (null, 'Joana Nogueira', 19);
+
+insert into setores (idsetores, serv_de_compliance, id_funcionarios) values (null, 'Maria Silva', 17);
+insert into setores (idsetores, serv_de_compliance, id_funcionarios) values (null, 'Maria Cecília Batista', 18);
+
+insert into setores (idsetores, serv_de_planej_tribu, id_funcionarios) values (null, 'Maria Cecília Xavier', 7);
+insert into setores (idsetores, serv_de_planej_tribu, id_funcionarios) values (null, 'Henrique Batista', 14);
+insert into setores (idsetores, serv_de_planej_tribu, id_funcionarios) values (null, 'Alícia Moraes', 9);
+
+insert into setores (idsetores, contab_forense, id_funcionarios) values (null, 'Emanuelly Batista', 13);
+insert into setores (idsetores, contab_forense, id_funcionarios) values (null, 'João Miguel Franco', 15);
+
+insert into setores (idsetores, ti, id_funcionarios) values (null, 'Kléber Moraes', 16);
+insert into setores (idsetores, ti, id_funcionarios) values (null, 'João Lucas Xavier', 27);
+insert into setores (idsetores, ti, id_funcionarios) values (null, 'Ladislau Silva', 28);
+
+insert into setores (idsetores, rh, id_funcionarios) values (null, 'Maitê Souza', 8);
+insert into setores (idsetores, rh, id_funcionarios) values (null, 'Liz Braga', 20);
+insert into setores (idsetores, rh, id_funcionarios) values (null, 'Mariana Santos', 23);
+insert into setores (idsetores, rh, id_funcionarios) values (null, 'Félix Oliveira', 25);
+
+insert into setores (idsetores, marketing, id_funcionarios) values (null, 'Heitor Martins', 29);
+insert into setores (idsetores, marketing, id_funcionarios) values (null, 'Félix Moraes', 30);
+
+
+
+
+
+
+
+------------------------------------------------------------INSERT FUNCIONARIOS---------------------------------------------------------------------
+
+
+
+
+
+
 
 Insert Into funcionarios (idfuncionarios, nome, sexo, email, idade, cpf) Values (1, 'Srta. Beatriz Barros', 'F', 'PedroHenrique_Barros15@gmail.com', 63, '95618829240');  
 Insert Into funcionarios (idfuncionarios, nome, sexo, email, idade, cpf) Values (2, 'Henrique Macedo', 'M', 'Elisio75@yahoo.com', 54, '05360284197');  
@@ -84,7 +166,66 @@ Insert Into funcionarios (idfuncionarios, nome, sexo, email, idade, cpf) Values 
 Insert Into funcionarios (idfuncionarios, nome, sexo, email, idade, cpf) Values (29, 'Heitor Martins', 'M', 'Igor_Costa45@hotmail.com', 42, '32247164747');  
 Insert Into funcionarios (idfuncionarios, nome, sexo, email, idade, cpf) Values (30, 'Félix Moraes', 'M', 'Pablo.Martins@gmail.com', 26, '37870647677'); 
 
------------TELEFONES------------
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------INSERT ENDERECO---------------------------------------------------------------------------
+
+
+
+
+
+
+
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (1, '6877 Danilo Alameda', 'São Cristóvão', 'Murilo do Sul', 'Amapá', '87996-016', 4);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (2, '30211 Ígor Alameda', 'Centro', 'Saraiva do Sul', 'Paraíba', '04327-390', 30);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (3, '778 Carvalho Travessa', 'Cancelli', 'Aline do Descoberto', 'Paraná', '72908-458', 9);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (4, '4927 Santos Rua', 'Maria Luiza', 'Emanuel do Norte', 'Rio de Janeiro', '72586-978', 8);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (5, '5539 Heloísa Rua', 'Country', 'Braga do Descoberto', 'Roraima', '51800-660', 18);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (6, '36259 Isis Marginal', 'Região do Lago', 'Giovanna de Nossa Senhora', 'São Paulo', '81975-795', 13);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (7, '7239 Célia Rodovia', 'Cancelli', 'Souza do Norte', 'Paraíba', '34907-266', 20);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (8, '74674 Oliveira Travessa', 'Canadá', 'Macedo do Sul', 'Santa Catarina', '10791-257', 14);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (9, '4209 Martins Rodovia', 'Parque São Paulo', 'Antônio do Norte', 'Amapá', '01749-756', 16);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (10, '37767 Costa Rua', 'Região do Lago', 'Bruna do Descoberto', 'Mato Grosso', '83972-580', 15);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (11, '68681 Benjamin Avenida', 'Country', 'Bryan do Descoberto', 'Rondônia', '03157-657', 17);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (12, '69279 Santos Travessa', 'São Cristóvão', 'Enzo Gabriel do Sul', 'Sergipe', '48821-249', 22);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (13, '8069 Barros Travessa', 'Maria Luiza', 'Fabrício do Norte', 'Amapá', '65230-369', 11);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (14, '40240 Silva Rodovia', 'Centro', 'Kléber do Descoberto', 'Rondônia', '26846-224', 25);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (15, '859 Lucca Travessa', 'Cascavel Velho', 'Hélio de Nossa Senhora', 'Pará', '95873-488', 12);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (16, '92914 Danilo Rua', 'Maria Luiza', 'Santos do Norte', 'Rondônia', '49743-716', 23);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (17, '1057 Isaac Travessa', 'Parque Verde', 'Oliveira de Nossa Senhora', 'Rio Grande do Norte', '06617-127', 6);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (18, '64293 Marli Marginal', 'Alto Alegre', 'Hugo do Descoberto', 'Bahia', '23260-530', 24);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (19, '6836 Enzo Avenida', 'Maria Luiza', 'Pablo do Sul', 'Roraima', '94216-999', 21);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (20, '618 Fabrícia Travessa', 'Country', 'Carlos de Nossa Senhora', 'Rio Grande do Sul', '89137-516', 3);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (21, '11436 Pereira Travessa', 'Neva', 'Benício do Sul', 'Amazonas', '15854-181', 7);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (22, '62269 Reis Rua', 'Pioneiros Catarinenses', 'Santos do Norte', 'Pará', '40021-721', 29);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (23, '526 Moreira Marginal', 'Parque Verde', 'Carvalho do Sul', 'Minas Gerais', '92575-199', 10);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (24, '4880 Pereira Rua', 'Universitário', 'Janaína do Norte', 'Rio Grande do Norte', '70231-436', 1);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (25, '735 Bryan Alameda', 'Coqueiral', 'Moraes de Nossa Senhora', 'Amapá', '52914-258', 2);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (26, '7143 Emanuel Alameda', 'Centro', 'Franco do Norte', 'Tocantins', '69615-808', 26);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (27, '620 Meire Avenida', 'Neva', 'Bernardo do Descoberto', 'Piauí', '94412-581', 5);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (28, '85388 Janaína Avenida', 'Parque São Paulo', 'Pedro Henrique do Descoberto', 'Rondônia', '25701-718', 27);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (29, '78640 Benício Rua', 'Pacaembu', 'Vicente do Norte', 'Acre', '95486-415', 28);  
+Insert Into endereco (idendereco, rua, bairro, cidade, estado, cep, id_funcionarios) Values (30, '7593 Oliveira Travessa', 'Centro', 'Maria Helena do Descoberto', 'Sergipe', '46379-730', 19);
+
+
+
+
+
+
+-----------------------------------------------------------------INSERT TELEFONES-----------------------------------------------------------------
+
+
+
+
+
+
 
 Insert Into telefone (idtelefone, ddd, numero, tipo, id_funcionarios) Values (1, '55', ' 91026-1964', 'cel', '1');  
 Insert Into telefone (idtelefone, ddd, numero, tipo, id_funcionarios) Values (2, '02', ' 94174-3254', 'cel', '2');  
