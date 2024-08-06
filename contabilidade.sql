@@ -54,9 +54,12 @@ create table setores (
     references funcionarios (idfuncionarios)
 );
 
+
+
 -----------------------------------VIEWS-----------------------------------
 
 SELECT * FROM V_NOME_TELEFONE;
+
 
 CREATE OR REPLACE VIEW V_NOME_TELEFONE AS
     SELECT  F.NOME,
@@ -86,36 +89,30 @@ SELECT * FROM V_NOME_SETORES_1;
 SELECT * FROM V_NOME_SETORES_2;
 
 CREATE OR REPLACE VIEW V_NOME_SETORES_1 AS
-    SELECT  S.auditoria,
-            S.contab_fiscal,
-            S.contab_gerencial,
-            S.consul_financeira,
-            S.gestao_de_riscos,
-            S.contab_de_custos,
-            S.serv_de_payroll     
+    SELECT  IDSETORES AS ID,
+            COALESCE(S.auditoria, '') AS AUDITORIA,
+            COALESCE(S.contab_fiscal, '') AS CONTAB_FISCAL,
+            COALESCE(S.contab_gerencial, '') AS CONTAB_GERENCIAL,
+            COALESCE(S.consul_financeira, '') AS CONSUL_FINANCEIRA,
+            COALESCE(S.gestao_de_riscos, '') AS GESTAO_DE_RISCOS,
+            COALESCE(S.contab_de_custos, '') AS CONTAB_DE_CUSTOS,
+            COALESCE(S.serv_de_payroll, '') AS SERV_DE_PAYROLL
         FROM SETORES S;
 
 CREATE OR REPLACE VIEW V_NOME_SETORES_2 AS          
-    SELECT  S.serv_de_compliance,
-            S.serv_de_planej_tribu,
-            S.contab_forense,
-            S.ti,
-            S.rh,
-            S.marketing
+    SELECT  IDSETORES AS ID,
+            COALESCE(S.serv_de_compliance, '') AS SERV_DE_COMPLIANCE,
+            COALESCE(S.serv_de_planej_tribu, '') AS SERV_DE_PLANEJ_TRIBU,
+            COALESCE(S.contab_forense, '') AS CONTAB_FORENSE,
+            COALESCE(S.ti, '') AS TI,
+            COALESCE(S.rh, '') AS RH,
+            COALESCE(S.marketing, '') AS MARKETING
         FROM SETORES S;
 
 
 update telefone
 set tipo ='res'
 where idtelefone='12';
-
-select nome, idfuncionarios from funcionarios;
-
-select nome as Funcionario, rua as Rua, bairro as Bairro, cidade as Cidade
-from funcionarios
-    inner join endereco
-    on idfuncionarios = id_funcionarios
-where id_funcionarios='15';
 
 select nome, cidade
 from funcionarios
@@ -180,29 +177,5 @@ change uf estado varchar(30) not null;
 alter table endereco
 modify estado varchar(25) not null;
 
-select nome, sexo, bairro
-from funcionarios
-    inner join endereco
-    on funcionarios.idfuncionarios = endereco.id_funcionarios
-where (bairro = 'maria luiza' and sexo = 'f')
-or (bairro = 'centro' and sexo ='f');
-
-select nome, sexo, bairro
-from funcionarios
-    inner join endereco
-    on funcionarios.idfuncionarios = endereco.id_funcionarios
-where bairro = 'maria luiza'
-or bairro ='centro';
-
-select nome, cidade, ddd, numero
-from funcionarios f
-    inner join endereco e
-    on f.idfuncionarios = e.id_funcionarios
-    inner join telefone t
-    on f.idfuncionarios = t.id_funcionarios
-where sexo = 'f';
 
 
-SELECT F.NOME, S.AREAS 
-    FROM FUNCIONARIOS F
-        INNER JOIN SETORES S;
